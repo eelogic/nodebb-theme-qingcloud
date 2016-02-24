@@ -4,7 +4,7 @@
 	<div component="category/posts">
 		<p>
 			<strong>{../user.username}</strong>
-			<a class="permalink" href="{config.relative_path}/topic/{../topic.slug}<!-- IF ../index -->/{../index}<!-- ENDIF ../index -->">
+			<a class="permalink" href="{config.relative_path}/topic/{../topic.tid}<!-- IF ../index -->/{../index}<!-- ENDIF ../index -->">
 				<small class="timeago" title="{../relativeTime}"></small>
 			</a>
 		</p>

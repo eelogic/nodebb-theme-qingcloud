@@ -21,7 +21,7 @@
 			<h1 component="topic/header" class="title pull-left">
 				<i component="topic/pinned" class="fa fa-thumb-tack <!-- IF !topics.pinned -->hide<!-- ENDIF !topics.pinned -->"></i>
 				<i component="topic/locked" class="fa fa-lock <!-- IF !topics.locked -->hide<!-- ENDIF !topics.locked -->"></i>
-				<a href="{config.relative_path}/topic/{topics.slug}" itemprop="url">{topics.title}</a><br />
+				<a href="{config.relative_path}/topic/{topics.tid}" itemprop="url">{topics.title}</a><br />
 
 				<!-- IF template.category -->
 				<small>
@@ -60,7 +60,7 @@
 				<!-- ELSE -->
 				<p class="hidden-xs">
 					<strong>{topics.teaser.user.username}</strong>
-					<a class="permalink" href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}">
+					<a class="permalink" href="{config.relative_path}/topic/{topics.tid}/{topics.teaser.index}">
 						<small class="timeago" title="{topics.teaser.timestamp}"></small>
 					</a>
 				</p>
